@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PostCraft</title>
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo-container">
+                <img src="../images/icon.png" alt="PostCraft Logo" class="logo">
+                <h1>PostCraft</h1>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </div>
+        </header>
+
+        <main>
+            <div class="control-panel">
+                <div class="select-wrapper">
+                    <i class="fas fa-magic icon-left"></i>
+                    <select id="type-generation">
+                        <option value="comment-generation">Awesome Comment</option>
+                        <option value="post-generation">Enhance Post</option>
+                    </select>
+                </div>
+
+                <div class="buttons-container">
+                    <button id="generate-button" class="primary-button">
+                        <i class="fas fa-bolt"></i>
+                        Generate
+                    </button>
+                    <button id="copy-button" class="secondary-button">
+                        <i class="fas fa-copy"></i>
+                        Copy
+                    </button>
+                </div>
+            </div>
+
+            <div id="result-container">
+                <div id="result-box" class="result-placeholder">
+                    <div class="empty-state">
+                        <i class="fas fa-wand-magic-sparkles"></i>
+                        <p>
+                            Select text, click "Generate" and watch the magic happen!
+                            <br> You can also copy the generated text
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="settings-link">
+                <i class="fas fa-gear"></i>
+                <span>Settings</span>
+            </div>
+            <div class="credits">Made with <i class="fas fa-heart"></i> by <a
+                    href="https://www.linkedin.com/in/abdirashidv/" target="_blank">Abdirashidv</a></div>
+        </footer>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

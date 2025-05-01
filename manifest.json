@@ -1,0 +1,28 @@
+{
+    "name": "PostCraft",
+    "description": "PostCraft helps you create engaging social media content with AI-powered post enhancement and comment generation tools.",
+    "manifest_version": 3,
+    "version": "1.0",
+    "permissions": ["scripting", "activeTab", "storage"],
+    "action": {
+        "default_icon": "images/icon.png",
+        "default_popup": "popup/popup.html"
+    },
+    "icons": {
+        "16": "images/icon.png",
+        "48": "images/icon.png",
+        "128": "images/icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["scripts/content.js"]
+        }
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+
+    "options_page": "options.html",
+    "host_permissions": ["<all_urls>"]
+}
